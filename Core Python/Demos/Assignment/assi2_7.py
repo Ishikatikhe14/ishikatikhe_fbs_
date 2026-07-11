@@ -1,4 +1,5 @@
 #Find the sum of three-digit number.
+
 num=379
  
 d1 = num % 100
