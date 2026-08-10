@@ -38,3 +38,13 @@ centimeters = km * 100000
 print("Distance in meters =", meters)
 print("Distance in centimeters =", centimeters)
 
+## 4Calculate the cost of painting the following building’s walls (both interior and exterior). 
+# You need to accept area (one wall) and cost of both interior and
+# exterior wall.
+# (Note: 1. Below diagram is of two joint rooms.
+# 2. It is upper view of building.)
+
+area = int(input('Enter the area of one wall: '))
+int_cost = int(input('Enter the cost for interior wall: '))
+ext_cost = int(input('Enter the cost for exterior wall: '))
+
