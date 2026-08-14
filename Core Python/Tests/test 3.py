@@ -1,21 +1,21 @@
 #1. Write a program to print first n prime numbers
-# n = int(input("Enter n: "))
-# count = 0
-# num = 2
+n = int(input("Enter n: "))
+count = 0
+num = 2
 
-# while count < n:
-#     prime = True
+while count < n:
+    prime = True
 
-#     for i in range(2, num):
-#         if num % i == 0:
-#             prime = False
-#             break
+    for i in range(2, num):
+        if num % i == 0:
+            prime = False
+            break
 
-#     if prime:
-#         print(num, end=" ")
-#         count += 1
+    if prime:
+        print(num, end=" ")
+        count += 1
 
-#     num += 1
+    num += 1
     
 #2.2. Write a program to calculate the sum of following series
 # where n is input by user.
@@ -37,26 +37,25 @@ print("Sum =", sum)
 # hra=20%. Based on this calculate the total salary of each emp
 # and also total salary of all emp.
 
-# n = int(input("Enter number of employees: "))
-# total = 0
+n = int(input("Enter number of employees: "))
+total = 0
+for i in range(n):
+    basic = float(input("Enter basic salary: "))
 
-# for i in range(n):
-#     basic = float(input("Enter basic salary: "))
+    if basic < 20000:
+        da = basic * 10 / 100
+        ta = basic * 12 / 100
+        hra = basic * 15 / 100
+    else:
+        da = basic * 15 / 100
+        ta = basic * 18 / 100
+        hra = basic * 20 / 100
 
-#     if basic < 20000:
-#         da = basic * 10 / 100
-#         ta = basic * 12 / 100
-#         hra = basic * 15 / 100
-#     else:
-#         da = basic * 15 / 100
-#         ta = basic * 18 / 100
-#         hra = basic * 20 / 100
+    salary = basic + da + ta + hra
+    print("Salary =", salary)
+    total += salary
 
-#     salary = basic + da + ta + hra
-#     print("Salary =", salary)
-#     total += salary
-
-# print("Total salary =", total)
+print("Total salary =", total)
 
 
 #4.4. Write a program to print pattern
