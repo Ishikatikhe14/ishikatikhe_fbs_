@@ -6,14 +6,11 @@
 # [1,3,4,1,2,3,6,7,1,2,4]
 # {1:3,3:2,2:2,
 
-numbers = [1, 3, 4, 1, 2, 3, 6, 7, 1, 2, 4]
+li = [1,3,4,1,2,3,6,7,1,2,4]
 
-d = {}
+D = {}
 
-for num in numbers:
-    if num in d:
-        d[num] = d[num] + 1
-    else:
-        d[num] = 1
+for x in li:
+    D[x] = li.count(x)
 
-print(d)
+print(D)
