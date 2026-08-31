@@ -15,12 +15,11 @@
 # Sample Output: 5
 
 n = int(input("Enter number of coins: "))
+coins = list(map(int, input().split()))
 
-coins = list(map(int, input("Enter coin numbers: ").split()))
+missing = 0
 
-for num in coins:
-    count = coins.count(num)
+for coin in coins:
+    missing = missing ^ coin
 
-    if count % 2 != 0:
-        print("Missing coin:", num)
-        break
+print("Missing coin =", missing)
